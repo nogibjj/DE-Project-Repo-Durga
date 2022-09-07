@@ -1,5 +1,4 @@
-# Project 1: Big Data Script that uses the Pandas API for Spark or Dask
+# Project 1: Analysis of Online Banking Data Using PySpark
 
-- Analysis of Online Banking Data
 - PySpark with Pandas API is being used in this project
 - The Project would be run on GitHub CodeSpaces and AWS SageMaker Studio
