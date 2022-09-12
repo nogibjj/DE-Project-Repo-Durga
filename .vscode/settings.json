@@ -1,0 +1,3 @@
+{
+    "python.linting.pylintPath":"/home/vscode/.venv/bin/pylint"
+}
