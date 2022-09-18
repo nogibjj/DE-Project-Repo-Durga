@@ -14,9 +14,9 @@ There are two ways we can query:
 ## Setup
 | File  | Description  |   
 |---|---|
-| [.devcontainer]()  |   - Setup Docker Container. Using Debian as the OS, and customized required extensions in devcontainer.json file. <br /> |  
-|[requirements.txt]()   |  - Contains the prerequisite packages that need to be installed before running this project.<br /> |   
-| [Makefile]()  |  - Purpose to install packages, test the project and to lint and format.<br /><br /> |   
+| [.devcontainer]()  |    Setup Docker Container. Using Debian as the OS, and customized required extensions in devcontainer.json file. <br /> |  
+|[requirements.txt]()   |   Contains the prerequisite packages that need to be installed before running this project.<br /> |   
+| [Makefile]()  |   Purpose to install packages, test the project and to lint and format.<br /><br /> |   
 
 <b>MakeFile Usage</b><br /><br />
 ```make install```to install, <br />
