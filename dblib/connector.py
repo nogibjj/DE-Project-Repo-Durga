@@ -1,18 +1,28 @@
 '''Databricks Connect CLI'''
 import os
 from databricks import sql
-def querydb(query="SELECT * FROM default.diamonds LIMIT 2"):
+
+
+class Connector():
     '''Connect to Databricks and run a query'''
-    with sql.connect(
-        server_hostname=os.getenv("DATABRICKS_SERVER_HOSTNAME"),
-        http_path=os.getenv("DATABRICKS_HTTP_PATH"),
-        access_token=os.getenv("DATABRICKS_TOKEN"),
-    ) as connection:
+    def __init__(self):
+        self.server_hostname = os.getenv("DATABRICKS_SERVER_HOSTNAME")
+        self.http_path = os.getenv("DATABRICKS_HTTP_PATH")
+        self.access_token = os.getenv("DATABRICKS_TOKEN")
 
-        with connection.cursor() as cursor:
-            cursor.execute(query)
-            result = cursor.fetchall()
+    def querydb(self, query):
+        '''Connect to Databricks and run a query'''
+        with sql.connect(
+            server_hostname=self.server_hostname,
+            http_path=self.http_path,
+            access_token=self.access_token,
+        ) as connection:
 
-        for row in result:
-            print(row)
-    return result
+            with connection.cursor() as cursor:
+                cursor.execute(query)
+                result = cursor.fetchall()
+
+            for row in result:
+                print(row)
+        return result
+
