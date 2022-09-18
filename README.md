@@ -1,6 +1,6 @@
-# IDS 706 Project 1 - Connect to Spark Cluster and Query Database.
+# IDS 706 Project 1 - Onilne Banking Data Analysis on Azure Databricks Cluster
  
-## About
+## About Project
 In this project, we try to analyze online banking data by querying the db. Cluster is hosted on Microsoft Azure Cluster via Databricks. 
 There are two ways we can query:
 1. Using the API 
@@ -12,8 +12,8 @@ There are two ways we can query:
 ## Setup
 [.devcontainer]() - Setup Docker Container. Using Debian as the OS, and customized required extensions in devcontainer.json file. <br />
 [requirements.txt]() - Contains the prerequisite packages that need to be installed before running this project.<br />
-[Makefile]()  - Purpose to install packages, test the project and to lint and format.<br />
-Usage
+[Makefile]()  - Purpose to install packages, test the project and to lint and format.<br /><br />
+<b>Usage</b><br /><br />
 ```make install```to install, <br />
 ```make test```to test,<br />
 ```make lint```to lint,<br />
