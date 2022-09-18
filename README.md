@@ -1,27 +1,32 @@
 # IDS 706 Project 1 - Connect to Spark Cluster and Query Database.
  
 ## About
-In this project, we try to analyze online banking data by querying the database
-This project is a big data script that uses Spark to query a database. For the Spark part, this project uses Databricks. Databricks clusters are run on Microsoft Azure. To communicate with the database on Databricks, this project uses the Python Databricks library. For users to run the query, there are two options: CLI and FastAPI.
+In this project, we try to analyze online banking data by querying the db. Cluster is hosted on Microsoft Azure Cluster via Databricks. 
+There are two ways we can query:
+1. Using the API 
+2. Using the CLI
 
 ## Diagram
 ![Diagram](Diagram.png)
 
-## Scaffold
-This project uses [.devcontainer]() to set up a container. [requirements.txt]() indicates which dependencies to use. [Makefile]() indicates how to test and lint. It also installs the required dependencies. Just use ```make``` to install.
+## Setup
+[.devcontainer]() - Setup Docker Container. Using Debian as the OS, and customized required extensions in devcontainer.json file. 
+[requirements.txt]() - Contains the prerequisites packages that need to be installed before running this project.
+[Makefile]()  - Purpose to install packages, test the project and to lint and format.
+Usage
+```make install```to install, 
+```make test```to test,
+```make lint```to lint,
+```make all```to perform all the above tasks.
 
-## Databricks and Microsoft Azure
-The database of this project is kept on Databricks and Databricks is run on Microsoft Azure. Databricks is based on Apache Spark, so we can leverage its parallel nature when doing queries.
-
-We need the following four secrests to connect and communicate with our Databrick cluster.
+DataBricks Configuration
+The following variables are used to open connection with the Databricks cluster and saved in the secrets section of the Github project.
 - ```DATABRICKS_HOST```
 - ```DATABRICKS_HTTP_PATH```
 - ```DATABRICKS_SERVER_HOSTNAME```
 - ```DATABRICKS_TOKEN```
 
-## Test connection
-We can use ```databricks-cli``` to test connection and print clusters information. Run the following CLI command.
-
+To test the connectivity,  ```databricks-cli``` can be used, please execute the following command:
 ```
 databricks clusters list --output JSON | jq
 ```
