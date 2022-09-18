@@ -7,7 +7,7 @@ There are two ways we can query:
 2. Using the CLI
 
 ## Project Architecture
-<img width="855" alt="image" src="https://user-images.githubusercontent.com/105465968/190920350-054fc711-359d-470f-b373-9d7a37f4481f.png">
+<img width="843" alt="image" src="https://user-images.githubusercontent.com/105465968/190926152-eb980b69-ac58-4fdc-bd82-1a75148c4f66.png">
 
 
 
