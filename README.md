@@ -62,7 +62,8 @@ or
 Then visit the prompted URL, and you will see a welcome message. Attach ```/query``` to the end of the URL. You will see the query result.
 
 ## CI/CD
-Github Actions are being used to automatically build and test for continuous integration and deployment.
+Github Actions are enabled to automatically build and test for continuous integration and deployment.
+<img width="1248" alt="image" src="https://user-images.githubusercontent.com/105465968/190922586-01f3b053-e169-4987-bd80-db302dd5d133.png">
 
 ## Performance Testing
 
