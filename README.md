@@ -10,15 +10,15 @@ There are two ways we can query:
 ![Diagram](Diagram.png)
 
 ## Setup
-[.devcontainer]() - Setup Docker Container. Using Debian as the OS, and customized required extensions in devcontainer.json file. 
-[requirements.txt]() - Contains the prerequisites packages that need to be installed before running this project.
-[Makefile]()  - Purpose to install packages, test the project and to lint and format.
+[.devcontainer]() - Setup Docker Container. Using Debian as the OS, and customized required extensions in devcontainer.json file. <br />
+[requirements.txt]() - Contains the prerequisites packages that need to be installed before running this project.<br />
+[Makefile]()  - Purpose to install packages, test the project and to lint and format.<br />
 Usage
 ```make install```to install, 
 ```make test```to test,
 ```make lint```to lint,
 ```make all```to perform all the above tasks.
-
+<br /><br />
 DataBricks Configuration
 The following variables are used to open connection with the Databricks cluster and saved in the secrets section of the Github project.
 - ```DATABRICKS_HOST```
