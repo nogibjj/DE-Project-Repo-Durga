@@ -11,12 +11,12 @@ There are two ways we can query:
 
 ## Setup
 [.devcontainer]() - Setup Docker Container. Using Debian as the OS, and customized required extensions in devcontainer.json file. <br />
-[requirements.txt]() - Contains the prerequisites packages that need to be installed before running this project.<br />
+[requirements.txt]() - Contains the prerequisite packages that need to be installed before running this project.<br />
 [Makefile]()  - Purpose to install packages, test the project and to lint and format.<br />
 Usage
-```make install```to install, 
-```make test```to test,
-```make lint```to lint,
+```make install```to install, <br />
+```make test```to test,<br />
+```make lint```to lint,<br />
 ```make all```to perform all the above tasks.
 <br /><br />
 DataBricks Configuration
