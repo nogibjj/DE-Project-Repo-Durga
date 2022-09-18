@@ -7,7 +7,9 @@ There are two ways we can query:
 2. Using the CLI
 
 ## Diagram
-![Diagram](Diagram.png)
+<img width="855" alt="image" src="https://user-images.githubusercontent.com/105465968/190920350-054fc711-359d-470f-b373-9d7a37f4481f.png">
+
+
 
 ## Setup
 | File  | Description  |   
