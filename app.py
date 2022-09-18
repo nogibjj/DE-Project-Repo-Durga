@@ -22,7 +22,8 @@ async def add(num1: int, num2: int):
 async def query():
     """Execute a SQL query"""
 
-    result = querydb()
+    result = querydb("SELECT MAX(WITHDRAWAL_AMT) FROM default.transaction group by ACCOUNT_NO order by MAX(WITHDRAWAL_AMT) desc limit 1")
+    
     return {"result": result}
 
 
