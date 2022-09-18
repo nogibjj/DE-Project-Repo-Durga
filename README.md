@@ -13,18 +13,16 @@ There are two ways we can query:
 | File  | Description  |   
 |---|---|
 | [.devcontainer]()  |   - Setup Docker Container. Using Debian as the OS, and customized required extensions in devcontainer.json file. <br /> |  
-|a   |  s |   
-| s  | s  |   
+|[requirements.txt]()   |  - Contains the prerequisite packages that need to be installed before running this project.<br /> |   
+| [Makefile]()  |  - Purpose to install packages, test the project and to lint and format.<br /><br /> |   
 
-
-[requirements.txt]() - Contains the prerequisite packages that need to be installed before running this project.<br />
-[Makefile]()  - Purpose to install packages, test the project and to lint and format.<br /><br />
-<b>Usage</b><br /><br />
+<b>MakeFile Usage</b><br /><br />
 ```make install```to install, <br />
 ```make test```to test,<br />
 ```make lint```to lint,<br />
 ```make all```to perform all the above tasks.
 <br /><br />
+
 DataBricks Configuration
 The following variables are used to open connection with the Databricks cluster and saved in the secrets section of the Github project.
 - ```DATABRICKS_HOST```
