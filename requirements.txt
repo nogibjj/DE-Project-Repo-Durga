@@ -1,6 +1,5 @@
 numpy
 pandas
-pyspark
 findspark
 Flask
 pytest
