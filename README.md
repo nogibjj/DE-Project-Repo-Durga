@@ -62,9 +62,17 @@ This project also uses ```FastAPI``` to build a microservice that enables users 
 Then visit the prompted URL, and you will see a welcome message. Attach ```/query``` to the end of the URL. You will see the query result.
 
 ## CI/CD
-This project uses GitHub Actions. It is built upon each push.
 
-## Load Test
+
+## Performance Testing
+
+### Locus Installation
+* [Install Locust](https://github.com/locustio/locust)
+* Create a `locustfile.py` and add the code in a file your current directory and run locust, <br />
+```
+locust
+```
+* Run loadtests
 
 <img width="948" alt="image" src="https://user-images.githubusercontent.com/105465968/190918534-5ff1df0a-f0e2-4a2a-ab37-fa4043aaf799.png">
 
