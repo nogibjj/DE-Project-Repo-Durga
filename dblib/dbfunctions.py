@@ -1,10 +1,11 @@
 '''Functions to connect to the database and return a cursor object'''
 import sys
 # adding Folder_2/subfolder to the system path
+
 sys.path.insert(0, '/workspaces/DE-Project-Repo-Durga')
+import dblib.connector as con
 
 
-from dblib.connector import Connector as con
 #return max withdrawal amount from transactions table
 def get_max_withdrawal():
     '''Return the max withdrawal amount'''

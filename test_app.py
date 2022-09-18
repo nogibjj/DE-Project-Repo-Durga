@@ -8,6 +8,6 @@ def test_root():
     '''Test the root'''
     response = client.get("/")
     assert response.status_code == 200
-    assert response.json() == {"message": "Hello Databricks"}
+    assert response.json() == {"message": "Hello Databrics"}
 
 test_root()
