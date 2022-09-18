@@ -67,7 +67,7 @@ Github Actions are enabled to automatically build and test for continuous integr
 
 ## Performance Testing
 
-### Locus Installation
+### Using Locust
 * [Install Locust](https://github.com/locustio/locust)
 * Create a `locustfile.py` and add the code in a file your current directory and run locust, <br />
 ```
