@@ -23,22 +23,23 @@ There are two ways we can query:
 ```make all```to perform all the above tasks.
 <br /><br />
 
-DataBricks Configuration
+## DataBricks Configuration
 The following variables are used to open connection with the Databricks cluster and saved in the secrets section of the Github project.
 - ```DATABRICKS_HOST```
 - ```DATABRICKS_HTTP_PATH```
 - ```DATABRICKS_SERVER_HOSTNAME```
 - ```DATABRICKS_TOKEN```
 
-To test the connectivity,  ```databricks-cli``` can be used, please execute the following command:
+<br/>To test the connectivity,  ```databricks-cli``` can be used, please execute the following command:
 ```
 databricks clusters list --output JSON | jq
 ```
 
-## Query package
-This project contains a package [dblib](https://github.com/nogibjj/ids-706-project-1-chang/tree/main/dblib) that connects with and executes queries to the Databricks database.
+## API Documentation
+This project uses ```FastAPI``` to build REST APIs.<br/>
 
-## CLI interface
+
+## CLI 
 This project uses ```click``` to build a CLI interface from which users can execute queries. Use the following command.
 
 ```
