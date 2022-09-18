@@ -63,3 +63,13 @@ Then visit the prompted URL, and you will see a welcome message. Attach ```/quer
 
 ## CI/CD
 This project uses GitHub Actions. It is built upon each push.
+
+## Load Test
+
+<img width="948" alt="image" src="https://user-images.githubusercontent.com/105465968/190918534-5ff1df0a-f0e2-4a2a-ab37-fa4043aaf799.png">
+
+
+
+<br /><br />
+<img width="1427" alt="image" src="https://user-images.githubusercontent.com/105465968/190918567-dbc44ce9-b220-43ce-be00-8401504a3e59.png">
+
