@@ -10,7 +10,13 @@ There are two ways we can query:
 ![Diagram](Diagram.png)
 
 ## Setup
-[.devcontainer]() - Setup Docker Container. Using Debian as the OS, and customized required extensions in devcontainer.json file. <br />
+| File  | Description  |   
+|---|---|
+| [.devcontainer]()  |   - Setup Docker Container. Using Debian as the OS, and customized required extensions in devcontainer.json file. <br /> |  
+|a   |  s |   
+| s  | s  |   
+
+
 [requirements.txt]() - Contains the prerequisite packages that need to be installed before running this project.<br />
 [Makefile]()  - Purpose to install packages, test the project and to lint and format.<br /><br />
 <b>Usage</b><br /><br />
