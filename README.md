@@ -1,7 +1,7 @@
 # IDS 706 Project 1 - Onilne Banking Data Analysis on Azure Databricks Cluster
  
 ## About Project
-In this project, we try to analyze online banking data by querying the db. Cluster is hosted on Microsoft Azure Cluster via Databricks. 
+In this project, we try to analyze online banking data by querying the spark database. Cluster is hosted on Microsoft Azure Cluster via Databricks. 
 There are two ways we can query:
 1. Using the API 
 2. Using the CLI
@@ -16,7 +16,8 @@ There are two ways we can query:
 |---|---|
 | [.devcontainer]()  |    Setup Docker Container. Using Debian as the OS, and customized required extensions in devcontainer.json file. <br /> |  
 |[requirements.txt]()   |   Contains the prerequisite packages that need to be installed before running this project.<br /> |   
-| [Makefile]()  |   Purpose to install packages, test the project and to lint and format.<br /><br /> |   
+| [Makefile]()  |   Purpose is to install packages, test the project and to lint and format the files.<br /><br /> |   
+
 
 <b>MakeFile Usage</b><br /><br />
 ```make install```to install, <br />
@@ -39,7 +40,10 @@ databricks clusters list --output JSON | jq
 
 ## API Documentation
 This project uses ```FastAPI``` to build REST APIs.<br/>
-
+To run the API, please use the below command
+```
+./app.py
+```
 
 ## CLI 
 This project uses ```click``` to build a CLI interface from which users can execute queries. Use the following command.
@@ -54,17 +58,11 @@ or
 ./query.py cli-query <--query QUERYTEXT>
 ```
 
-## FastAPI inferface
-This project also uses ```FastAPI``` to build a microservice that enables users to query in a RESTful way. Use the following command to start the service.
-
-```
-./app.py
-```
 
 Then visit the prompted URL, and you will see a welcome message. Attach ```/query``` to the end of the URL. You will see the query result.
 
 ## CI/CD
-
+Github Actions are being used to automatically build and test for continuous integration and deployment.
 
 ## Performance Testing
 
