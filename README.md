@@ -44,6 +44,7 @@ To run the API, please use the below command
 ```
 ./app.py
 ```
+<img width="620" alt="image" src="https://user-images.githubusercontent.com/105465968/190928058-e3fd2f0c-5daf-455a-b599-ebf3a61f9f5b.png">
 
 ## CLI 
 This project uses ```click``` to build a CLI interface from which users can execute queries. Use the following command.
