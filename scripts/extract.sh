@@ -1,10 +1,24 @@
 #!/bin/bash
 
-# This script is used to extract data from a csv file
 
 #read a csv file and extract data
 extract() {
-$data = $(cat $1)
-./scripts/logs.sh info_log "Extracting data from $1"
-echo $data
+#call kaggle api to download the data from kaggle to the data folder
+./logs.sh info "Downloading from kaggle"
+kaggle datasets download -d 'sudalairajkumar/novel-corona-virus-2019-dataset' -p ../data
+
+#unzip the data if it is downloaded as a zip file
+./logs.sh info "Unzipping the data"
+unzip ../data/novel-corona-virus-2019-dataset.zip -d ../data
+#remove the zip file
+rm ../data/novel-corona-virus-2019-dataset.zip
+
+./logs.sh info "Extracting the data"
+#read the csv file
+csvfile=../data/covid_19_data.csv
+
 }
+#call the function  
+extract
+
+
