@@ -1,1 +1,5 @@
 kaggle
+databricks
+databricks-cli
+databricks-sql-connector
+databricks-connect
