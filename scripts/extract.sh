@@ -4,7 +4,7 @@
 extract() {
 #call kaggle api to download the data from kaggle to the data folder
 ./logs.sh info "Downloading from kaggle"
-kaggle datasets download -d 'sudalairajkumar/novel-corona-virus-2019-dataset' -p ../current_dir/data
+kaggle datasets download -d 'sudalairajkumar/novel-corona-virus-2019-dataset' -p ../data
 
 #unzip the data if it is downloaded as a zip file
 ./logs.sh info "Unzipping the data"
