@@ -57,4 +57,7 @@ scripts/loadTable.py
 ## CI/CD
 Github Actions are enabled to automatically build and test for continuous integration and deployment.
 
+## Logging
+The logs are stored under the directory ```logs/application.logs``` as below 
+<img width="848" alt="image" src="https://user-images.githubusercontent.com/105465968/194789190-597d2ed6-5bf8-4122-8127-f446d8c09b49.png">
 
