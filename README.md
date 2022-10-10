@@ -7,6 +7,7 @@ This Project could be run with:
 BASH CLI
 
 ## Project Architecture
+<img width="514" alt="image" src="https://user-images.githubusercontent.com/105465968/194791347-d03a44cc-0d13-4020-b9d1-2749b4fcbdcd.png">
 
 
 ## Setup
