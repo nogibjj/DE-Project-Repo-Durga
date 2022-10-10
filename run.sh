@@ -11,5 +11,5 @@ scripts/logs.sh info "Calling the transform module"
 scripts/transform.sh
 
 scripts/logs.sh info "Calling the load module"
-scripts/load.sh
+/home/vscode/.venv/bin/python /workspaces/DE-Project-Repo-Durga/scripts/loadTable.py
 

@@ -3,16 +3,16 @@
 #read a csv file and extract data from it
 extract() {
 #call kaggle api to download the data from kaggle to the data folder
-./logs.sh info "Downloading from kaggle"
+scripts/logs.sh info "Downloading from kaggle"
 kaggle datasets download -d 'sudalairajkumar/novel-corona-virus-2019-dataset' -p ../data
 
 #unzip the data if it is downloaded as a zip file
-./logs.sh info "Unzipping the data"
+scripts/logs.sh info "Unzipping the data"
 unzip ../data/novel-corona-virus-2019-dataset.zip -d ../data
 #remove the zip file
 rm ../data/novel-corona-virus-2019-dataset.zip
 
-./logs.sh info "Extracting the data"
+scripts/logs.sh info "Extracting the data"
 #read the csv file
 csvfile=../data/covid_19_data.csv
 
