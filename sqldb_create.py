@@ -2,8 +2,6 @@
 import sqlite3
 import csv
 
-
-# connect to database with a function
 def create_table():
     '''create a database and connect to it'''
     connect = sqlite3.connect("trends.db")
@@ -19,7 +17,7 @@ def create_table():
     connect.commit()
     connect.close()
 
-# write a function to insert data into the database from csv file
+
 def insert_data():
     '''insert data into the database'''
     connect = sqlite3.connect("trends.db")
@@ -32,7 +30,6 @@ def insert_data():
         connect.commit()
         connect.close()
 
-# write a function to read data from the database
 def read_data():
     '''read data from the database'''
     connect = sqlite3.connect("trends.db")
@@ -47,3 +44,4 @@ if __name__ == "__main__":
     create_table()
     insert_data()
     read_data()
+    
