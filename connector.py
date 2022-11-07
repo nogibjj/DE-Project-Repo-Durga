@@ -2,7 +2,6 @@
 from google.cloud import bigquery
 from google.oauth2 import service_account
 
-
 def main():
     '''Function to query the BigQuery database'''
     key_path = "keyfile.json"
