@@ -21,17 +21,12 @@ if __name__ == "__main__":
     QUERY = '''SELECT query,rank FROM trends where year='2020' GROUP BY rank'''
     query_print(QUERY)
 
-    #Printing top searched queries location wise
     print('\n3. Printing top searched queries location wise')
     QUERY = '''SELECT distinct location,query from trends where year='2020' and rank='1' group by location'''
     query_print(QUERY)
 
-    #Printing top searched queries in the movies category in 2020
     print('\n4. Printing top searched queries in the movies category in 2020')
     QUERY = '''SELECT query,rank FROM trends where category='Movies' and year='2020' GROUP BY rank'''
     query_print(QUERY)
 
-    #Printing top searched queries in the all category in 2020
-    print('\n5. Printing top searched queries in the all category in 2020')
-    QUERY = '''SELECT query,rank FROM trends where year='2020' GROUP BY rank'''
-    query_print(QUERY)
+
