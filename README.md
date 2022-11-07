@@ -3,6 +3,26 @@
 ## Project Architecture
 <img width="402" alt="image" src="https://user-images.githubusercontent.com/105465968/200236085-851fee97-3055-427d-bddb-d7bf8b265335.png">
 
+## Setup
+| File  | Description  |   
+|---|---|
+| [.devcontainer]()  |    Setup Docker Container. Using Debian as the OS, and customized required extensions in devcontainer.json file. <br /> |  
+|[requirements.txt]()   |   Contains the prerequisite packages that need to be installed before running this project.<br /> |   
+| [Makefile]()  |   Purpose is to install packages, test the project and to lint and format the files.<br /><br /> |   
+
+
+<b>MakeFile Usage</b><br /><br />
+```make install```to install, <br />
+```make test```to test,<br />
+```make lint```to lint,<br />
+```make all```to perform all the above tasks.
+<br /><br />
+
+<b>Sqllite DB:</b><br /><br />
+1. Created Trends DB locally<br />
+2. Inserted Data from Kaggle Dataset csv file into Trends db<br />
+3. Query and draw insights
+
 ## Queries:
 1. Top Trends by year
 2. Top Trends in 2020 
