@@ -1,4 +1,4 @@
-##Project 4 - Movies Microservice
+## Project 4 - Movies Microservice
 
 Movies Microservice that returns a JSON payload and SQLite as Backend DB, 
 Used FLask for the Microservice and containerized it using Docker and built CI/CD on AWS.
