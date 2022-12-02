@@ -38,7 +38,7 @@ Used FLask for the Microservice and containerized it using Docker and built CI/C
 ```docker image ls```  
 ```docker run -p 127.0.0.1:8080:<img>```  
 
-### Part 5: Deploy with AWS 
+### Deploy with AWS 
 The following variables are used to open connection with the AWS and saved in the secrets section of the Github project.
 - ```AWS_ACCESS_KEY_ID```
 - ```AWS_SECRET_ACCESS_KEY```
